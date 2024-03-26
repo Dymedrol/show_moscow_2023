@@ -1,0 +1,30 @@
+.mm-menu {
+  padding: 20px;
+  margin-bottom: 20px;
+
+  @media ($MD) {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  @media ($LG) {
+    margin-bottom: 40px;
+  }
+
+  @media ($XL) {
+    padding: 40px 40px 0;
+    margin-bottom: 80px;
+  }
+
+  @media ($XXL) {
+  }
+}
+
+.mm-menu__wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  @media ($LG) {
+    justify-content: flex-end;
+  }
+}

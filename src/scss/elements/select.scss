@@ -1,0 +1,190 @@
+.react-select-container {
+}
+
+.react-select__control {
+  display: flex;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: none;
+
+  @media ($LG) {
+    height: 49px;
+    border-radius: 20px;
+  }
+}
+
+.react-select__control--menu-is-open {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  & .react-select__indicator {
+    transform: rotate(180deg);
+  }
+}
+
+.react-select__single-value {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  color: rgba(0, 0, 0, 1) !important;
+
+  @media ($LG) {
+    font-size: 24px !important;
+    line-height: 27px !important;
+  }
+}
+
+.react-select__menu {
+  top: 100%;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 0px 0 12px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 0;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.react-select__menu-inner {
+  border: 2px solid black;
+}
+
+.react-select__indicator {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 9px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+
+  @media ($LG) {
+    top: 12px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/*
+react-select__dropdown-indicator
+*/
+
+.react-select__option {
+  background-color: #fff;
+  color: inherit;
+  cursor: default;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+  box-sizing: border-box;
+
+  font-family: "Helvetica" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  margin-bottom: 10px;
+  padding: 0px 52px 0 12px;
+
+  @media ($LG) {
+    font-size: 24px !important;
+    line-height: 27px !important;
+    margin-bottom: 10px;
+  }
+}
+
+.react-select__option div {
+  // @include Inter(500, normal, 14px, 22px);
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.react-select__option--is-focused {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.react-select__option--is-selected {
+  // background-color: #b3b3b3;
+}
+
+.react-select__input-container {
+  margin: 0;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  visibility: visible;
+  flex: 1 1 auto;
+  grid-area: 1/1/2/3;
+  grid-template-columns: 0 min-content;
+  box-sizing: border-box;
+}
+
+.react-select__value-container {
+  align-items: center;
+  display: grid;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 0 12px;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.react-select-container
+  .react-select__value-container
+  .react-select__input-container {
+  margin: 0;
+}
+
+.react-select__placeholder {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  color: rgba(0, 0, 0, 0.3) !important;
+
+  @media ($LG) {
+    font-size: 24px !important;
+    line-height: 27px !important;
+  }
+}
+
+.react-select__single-value {
+  // @include Inter(400, normal, 14px, 22px);
+
+  color: #000;
+  grid-area: 1/1/2/3;
+  margin-left: 2px;
+  margin-right: 2px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.react-select__arrow {
+  width: 15px;
+
+  @media (min-width: $XL) {
+    width: 22px;
+  }
+}

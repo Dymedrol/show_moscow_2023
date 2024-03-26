@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+
+  @media ($LG) {
+    background-image: url("../../public/img/bg-lg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  @media ($XL) {
+    background-image: url("../../public/img/bg-xl.svg");
+  }
+
+  @media ($XXL) {
+    background-image: url("../../public/img/bg-xxl.svg");
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
